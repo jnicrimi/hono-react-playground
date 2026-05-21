@@ -1,7 +1,1 @@
-# repository-template
-
-## Setup
-
-```sh
-lefthook install
-```
+# hono-react-playground

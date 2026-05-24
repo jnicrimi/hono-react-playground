@@ -12,7 +12,7 @@ pre-commit:
       run: gitleaks git --pre-commit --staged
     markdownlint:
       glob: "*.md"
-      run: markdownlint {staged_files}
+      run: pnpm exec markdownlint-cli2 {staged_files}
     yamllint:
       glob: "*.{yml,yaml}"
       run: yamllint --strict {staged_files}

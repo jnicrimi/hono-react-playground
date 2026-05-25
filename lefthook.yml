@@ -6,10 +6,10 @@ commit-msg:
 pre-commit:
   parallel: true
   commands:
-    biome:
-      run: pnpm exec biome check --staged --no-errors-on-unmatched
     gitleaks:
       run: gitleaks git --pre-commit --staged
+    biome:
+      run: pnpm exec biome check --staged --no-errors-on-unmatched
     markdownlint:
       glob: "*.md"
       run: pnpm exec markdownlint-cli2 {staged_files}

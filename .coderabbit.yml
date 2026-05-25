@@ -12,9 +12,7 @@ reviews:
   estimate_code_review_effort: false
   related_prs: false
   auto_review:
-    enabled: true
-    ignore_usernames:
-      - "renovate[bot]"
+    enabled: false
     drafts: false
   finishing_touches:
     docstrings:

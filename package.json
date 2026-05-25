@@ -11,7 +11,6 @@
     "node": ">=24",
     "pnpm": ">=11"
   },
-  "packageManager": "pnpm@11.2.2",
   "devDependencies": {
     "@biomejs/biome": "2.4.15",
     "markdownlint-cli2": "^0.22.1",

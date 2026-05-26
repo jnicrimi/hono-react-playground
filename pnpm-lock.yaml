@@ -12,10 +12,10 @@ importers:
         specifier: 2.4.15
         version: 2.4.15
       markdownlint-cli2:
-        specifier: ^0.22.1
+        specifier: 0.22.1
         version: 0.22.1
       turbo:
-        specifier: ^2.9.14
+        specifier: 2.9.14
         version: 2.9.14
 
 packages:

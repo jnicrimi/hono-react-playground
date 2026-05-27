@@ -2,3 +2,4 @@ packages:
   - 'apps/*'
   - 'packages/*'
 saveExact: true
+minimumReleaseAge: 1440

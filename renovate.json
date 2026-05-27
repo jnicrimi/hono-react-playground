@@ -12,10 +12,6 @@
     {
       "matchUpdateTypes": ["pin", "pinDigest"],
       "minimumReleaseAge": "0 days"
-    },
-    {
-      "matchDepTypes": ["engines"],
-      "enabled": false
     }
   ],
   "vulnerabilityAlerts": {

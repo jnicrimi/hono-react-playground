@@ -5,11 +5,12 @@ on:
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
   cancel-in-progress: false
-permissions:
-  pull-requests: write
-  issues: write
+permissions: {}
 jobs:
   call-preset-pr:
-    uses: jnicrimi/reusable-workflows/.github/workflows/called-preset-pr.yml@main
+    name: call-preset-pr
+    permissions:
+      pull-requests: write  # PR 作成者を assignee に自動設定するため
+    uses: jnicrimi/reusable-workflows/.github/workflows/called-preset-pr.yml@cafd065c54b356b99500d1a10983ad791fbe6819  # main
     secrets:
       token: ${{ secrets.GITHUB_TOKEN }}

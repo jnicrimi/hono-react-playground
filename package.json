@@ -17,6 +17,6 @@
     "@commitlint/config-conventional": "21.0.1",
     "@taplo/cli": "0.7.0",
     "markdownlint-cli2": "0.22.1",
-    "turbo": "2.9.14"
+    "turbo": "2.9.15"
   }
 }

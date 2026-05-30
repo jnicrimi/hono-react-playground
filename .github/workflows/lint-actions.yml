@@ -1,12 +1,16 @@
 name: lint-actions
+
 on:
   pull_request:
     types: [opened, reopened, synchronize]
+
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
   cancel-in-progress: true
+
 permissions:
   contents: read
+
 jobs:
   actionlint:
     name: actionlint
@@ -20,6 +24,7 @@ jobs:
           install_args: actionlint
       - name: actionlint
         run: actionlint -color
+
   zizmor:
     name: zizmor
     runs-on: ubuntu-latest

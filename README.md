@@ -3,6 +3,5 @@
 ## Setup
 
 ```sh
-mise install
-pnpm install
+mise run setup
 ```

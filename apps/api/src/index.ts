@@ -1,9 +1,7 @@
 import { serve } from "@hono/node-server"
-import { Hono } from "hono"
+import { createApp } from "./shared/di/container"
 
-const app = new Hono()
-
-app.get("/", (c) => c.text("Hello, World!"))
+const app = createApp()
 
 const server = serve(app)
 

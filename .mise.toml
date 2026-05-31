@@ -9,3 +9,8 @@ lefthook = "2.1.9"
 [tasks.setup]
 description = "Initial project setup"
 run = ["mise install", "lefthook install", "pnpm install --frozen-lockfile"]
+
+[tasks.yamllint]
+description = "Lint YAML files"
+raw_args = true
+run = "uvx --python-preference only-managed yamllint==1.38.0"

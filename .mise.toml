@@ -14,3 +14,15 @@ run = ["mise install", "lefthook install", "pnpm install --frozen-lockfile"]
 description = "Lint YAML files"
 raw_args = true
 run = "uvx --python-preference only-managed yamllint==1.38.0"
+
+[tasks."db:up"]
+description = "Start the PostgreSQL container"
+run = "docker compose up -d"
+
+[tasks."db:down"]
+description = "Stop the PostgreSQL container"
+run = "docker compose down"
+
+[tasks."db:logs"]
+description = "Tail PostgreSQL logs"
+run = "docker compose logs -f postgres"

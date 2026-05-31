@@ -20,5 +20,15 @@
     "rules": {
       "recommended": true
     }
-  }
+  },
+  "overrides": [
+    {
+      "includes": ["**/*.ts", "**/*.tsx"],
+      "javascript": {
+        "formatter": {
+          "semicolons": "asNeeded"
+        }
+      }
+    }
+  ]
 }

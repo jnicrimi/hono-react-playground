@@ -1,22 +1,22 @@
-import { serve } from "@hono/node-server";
-import { Hono } from "hono";
+import { serve } from "@hono/node-server"
+import { Hono } from "hono"
 
-const app = new Hono();
+const app = new Hono()
 
-app.get("/", (c) => c.text("Hello, World!"));
+app.get("/", (c) => c.text("Hello, World!"))
 
-const server = serve(app);
+const server = serve(app)
 
 process.on("SIGINT", () => {
-  server.close();
-  process.exit(0);
-});
+  server.close()
+  process.exit(0)
+})
 process.on("SIGTERM", () => {
   server.close((err) => {
     if (err) {
-      console.error(err);
-      process.exit(1);
+      console.error(err)
+      process.exit(1)
     }
-    process.exit(0);
-  });
-});
+    process.exit(0)
+  })
+})

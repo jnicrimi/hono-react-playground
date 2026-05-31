@@ -15,7 +15,7 @@ pre-commit:
       run: pnpm exec markdownlint-cli2 {staged_files}
     yamllint:
       glob: "*.{yml,yaml}"
-      run: uvx --python-preference only-managed yamllint==1.38.0 --strict {staged_files}
+      run: mise run yamllint --strict {staged_files}
     actionlint:
       glob: ".github/workflows/*.{yml,yaml}"
       run: actionlint {staged_files}

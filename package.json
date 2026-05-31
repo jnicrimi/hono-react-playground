@@ -5,7 +5,8 @@
     "build": "turbo run build",
     "dev": "turbo run dev",
     "lint": "biome check",
-    "fix": "biome check --write"
+    "fix": "biome check --write",
+    "typecheck": "turbo run typecheck"
   },
   "engines": {
     "node": ">=24",

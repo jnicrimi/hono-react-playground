@@ -11,6 +11,9 @@ reviews:
   sequence_diagrams: false
   estimate_code_review_effort: false
   related_prs: false
+  tools:
+    eslint:
+      enabled: false
   auto_review:
     enabled: false
     drafts: false

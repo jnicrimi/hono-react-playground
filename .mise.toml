@@ -26,3 +26,7 @@ run = "docker compose down"
 [tasks."db:logs"]
 description = "Tail PostgreSQL logs"
 run = "docker compose logs -f postgres"
+
+[tasks."db:psql"]
+description = "Connect to PostgreSQL with psql"
+run = "docker compose exec postgres psql -U ${POSTGRES_USER:-postgres} -d ${POSTGRES_DB:-app}"
